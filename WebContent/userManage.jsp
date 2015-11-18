@@ -10,7 +10,6 @@
     <title>bootstrap</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/my.css" />
-    
 </head>
 
 <body>
@@ -106,7 +105,7 @@
             <div class="col-md-10" >
                <div class="row">
 							<!-- 输入框 -->
-					  <div class="col-lg-6">
+					  <div class="col-lg-6 col-center-block">
 					    <div class="input-group">
 					      <input type="text" class="form-control" placeholder="Search for...">
 					      <span class="input-group-btn">
@@ -145,7 +144,7 @@
 				                 
 								</table>
 								 <!--分页-->
-                <nav>
+                <nav class="text-center">
 				  <ul class="pagination">
 				    <li>
 				      <a href="#" aria-label="Previous">
@@ -170,13 +169,13 @@
     </div>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/angular.min.js"></script>
-    <script src="js/app.js"></script>
-	<script src="js/services.js"></script>
-	<script src="js/controllers.js"></script>
-	<script src="js/filters.js"></script>
-	<script src="js/directives.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/lib/angular.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/app.js"></script>
+	<script src="${pageContext.request.contextPath}/js/services.js"></script>
+	<script src="${pageContext.request.contextPath}/js/controllers.js"></script>
+	<script src="${pageContext.request.contextPath}/js/filters.js"></script>
+	<script src="${pageContext.request.contextPath}/js/directives.js"></script>
 	<script>
         $("#mytab a").click(function(e) {
             e.preventDefault;

@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/my.css" />
     
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/angular.min.js"></script>
-    <script src="js/app.js"></script>
-	<script src="js/services.js"></script>
-	<script src="js/controllers.js"></script>
-	<script src="js/filters.js"></script>
-	<script src="js/directives.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/lib/angular.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/app.js"></script>
+	<script src="${pageContext.request.contextPath}/js/services.js"></script>
+	<script src="${pageContext.request.contextPath}/js/controllers.js"></script>
+	<script src="${pageContext.request.contextPath}/js/filters.js"></script>
+	<script src="${pageContext.request.contextPath}/js/directives.js"></script>
 	<script>
         $("#mytab a").click(function(e) {
             e.preventDefault;

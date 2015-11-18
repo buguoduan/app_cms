@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/my.css" />
     
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/angular.min.js"></script>
-    <script src="js/app.js"></script>
-	<script src="js/services.js"></script>
-	<script src="js/controllers.js"></script>
-	<script src="js/filters.js"></script>
-	<script src="js/directives.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/lib/angular.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/app.js"></script>
+	<script src="${pageContext.request.contextPath}/js/services.js"></script>
+	<script src="${pageContext.request.contextPath}/js/controllers.js"></script>
+	<script src="${pageContext.request.contextPath}/js/filters.js"></script>
+	<script src="${pageContext.request.contextPath}/js/directives.js"></script>
 	<script>
         $("#mytab a").click(function(e) {
             e.preventDefault;
@@ -117,7 +117,7 @@
                 </ul>
             </div>
           
-            <div class="col-md-10" >
+            <div class="col-md-10 " >
               	<form class="form-horizontal" action="updateUser" method="post">
 	              	<div class="form-group">
 	              		<div class="col-sm-2">
@@ -139,7 +139,7 @@
 				      <div class="form-group">
 					    <label for="inputDate3" class="col-sm-1 control-label">日期</label>
 					    <div class="col-sm-3">
-					      <input type="text"  value="${User.date}" class="form-control" id="disabledInput" placeholder="Date" disabled>
+					      <input type="text"  value="<fmt:formatDate value="${User.date}" pattern="yyyy-M-d" />" class="form-control" id="disabledInput" placeholder="Date" disabled>
 					    </div>
 				     </div>
 				     <button type="submit" class="btn btn-primary">Submit</button>
